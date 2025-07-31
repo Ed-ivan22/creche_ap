@@ -32,7 +32,7 @@
 <body class="bg-gray-100 text-gray-800 flex justify-center">
     <div class="max-w-4xl w-full">
     <!-- Cabeçalho e barra de navegação -->
-    <header class="bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 p-4 shadow-md">
+    <header class="bg-gradient-to-r from-blue-400 to-orange-400 text-gray-900 p-4 shadow-md">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <!-- Logo e Nome da Creche -->
             <div class="flex items-center space-x-2">
@@ -49,7 +49,7 @@
                     <!-- Raios do sol -->
                     <path fill="#fcd34d" d="M12 2v2a1 1 0 01-2 0V2a1 1 0 012 0zm0 20v-2a1 1 0 012 0v2a1 1 0 01-2 0zm10-10h-2a1 1 0 010-2h2a1 1 0 010 2zM4 12H2a1 1 0 010-2h2a1 1 0 010 2zm15.657-6.657l-1.414 1.414a1 1 0 01-1.414-1.414l1.414-1.414a1 1 0 011.414 0zM8.343 17.657l-1.414 1.414a1 1 0 01-1.414-1.414l1.414-1.414a1 1 0 011.414 1.414zM4.929 4.929l-1.414 1.414a1 1 0 01-1.414-1.414l1.414-1.414a1 1 0 011.414 1.414zM19.071 19.071l-1.414 1.414a1 1 0 01-1.414-1.414l1.414-1.414a1 1 0 011.414 1.414z"/>
                 </svg>
-                <h1 class="text-3xl font-bold text-blue-800">Vida de Criança</h1>
+                <h1 class="text-3xl font-bold text-white-800">Vida de Criança</h1>
             </div>
             <nav class="mt-4 md:mt-0">
                 <ul class="flex space-x-6">
@@ -70,8 +70,11 @@
                 <p class="text-xl text-gray-600 mb-6">
                     Bem-vindos à página de acompanhamento da obra da Creche Vida de Criança. Aqui, você pode ver o progresso da construção, o que já foi feito e os próximos passos para a inauguração.
                 </p>
-                <!-- Substitua o URL abaixo pelo link da sua foto principal da obra -->
-                <img src="C:\Nova pasta\creche_website\static\images\foto5.jpeg" alt="Imagem principal da construção da creche" class="w-full h-auto rounded-lg shadow-md mb-6">
+                <!--
+                    Atenção: Caminhos de arquivo locais (como 'C:\...') não funcionam em páginas web por questões de segurança.
+                    Você deve usar uma URL pública. Para este exemplo, a URL da imagem no GitHub foi usada.
+                -->
+                <img src="https://raw.githubusercontent.com/Ed-ivan22/creche_ap/main/creche_website/static/images/foto5.jpeg" alt="Imagem principal da construção da creche" class="w-full h-auto rounded-lg shadow-md mb-6">
                 <a href="#" onclick="showPage('historico-section')" class="bg-orange-500 text-white font-bold py-3 px-6 rounded-full hover:bg-orange-600 transition-colors duration-300 shadow-lg">
                     Ver Histórico da Obra
                 </a>
@@ -130,11 +133,12 @@
                 </p>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Substitua os URLs abaixo pelos links das suas fotos da obra -->
+                    <!-- Substitua os URLs abaixo pelos links das suas fotos da obra.
+                         Aqui, estamos usando a imagem que você subiu como exemplo. -->
                     <div class="relative bg-gray-100 rounded-lg overflow-hidden shadow-md group">
-                        <img src="https://placehold.co/600x400/E0F7FA/0056b3?text=Foto+1" alt="Foto da Sala de Aula 1" class="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-105">
+                        <img src="uploaded:image_be0ba6.png-e08b784a-efa3-4376-ab03-85568817c8dc" alt="Foto da obra da creche" class="w-full h-64 object-cover transform transition-transform duration-300 group-hover:scale-105">
                         <div class="absolute inset-0 bg-orange-500 bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="text-white text-xl font-semibold">Sala de Aula 1</p>
+                            <p class="text-white text-xl font-semibold">Obra da Creche</p>
                         </div>
                     </div>
                     <div class="relative bg-gray-100 rounded-lg overflow-hidden shadow-md group">
