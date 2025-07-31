@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creche "Nome da Creche" - Sobre Nós</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Sobre a Creche "Nome da Creche"</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('sobre') }}">Sobre Nós</a></li>
+                <li><a href="{{ url_for('galeria') }}">Galeria de Fotos</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Nossa História e Missão</h2>
+            <p>
+                A Creche "Nome da Creche" foi fundada em [Ano de Fundação] com o objetivo de oferecer um ambiente seguro, acolhedor e estimulante para o desenvolvimento de crianças de [Idade Inicial] a [Idade Final] anos. Acreditamos que a infância é a base para toda a vida, e nosso compromisso é nutrir o potencial de cada criança, incentivando a curiosidade, a criatividade e o respeito mútuo.
+            </p>
+            <p>
+                Nossa missão é proporcionar uma educação de qualidade, baseada em princípios de afeto, ludicidade e individualidade, preparando as crianças para os desafios futuros e para uma vida plena.
+            </p>
+            <h3>Nossa Equipe</h3>
+            <p>
+                Contamos com uma equipe de profissionais dedicados e experientes, incluindo pedagogos, psicólogos, nutricionistas e auxiliares, todos apaixonados por educação infantil e comprometidos com o bem-estar e o aprendizado de cada criança.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Creche "Nome da Creche". Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

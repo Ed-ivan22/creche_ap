@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creche "Nome da Creche" - Contato</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .contact-info p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .contact-info strong {
+            color: #333;
+        }
+        .map-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .map-container iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entre em Contato Conosco</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('sobre') }}">Sobre Nós</a></li>
+                <li><a href="{{ url_for('galeria') }}">Galeria de Fotos</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Teremos prazer em atendê-lo!</h2>
+            <div class="contact-info">
+                <p><strong>Endereço:</strong> Rua da Creche, 123 - Centro, Ariquemes - RO, 76870-000</p>
+                <p><strong>Telefone:</strong> (69) 1234-5678</p>
+                <p><strong>Email:</strong> contato@nomedacreche.com.br</p>
+                <p><strong>Horário de Funcionamento:</strong> Segunda a Sexta, das 7h às 18h</p>
+            </div>
+
+            <div class="map-container">
+                <h3>Onde nos Encontrar</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.479633845946!2d-63.90422112448259!3d-9.91689235071191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92323e0d8f78f8d9%3A0x7d6f8f7c9e7e7e7!2sAriquemes%20-%20RO!5e0!3m2!1spt-BR!2sbr!4v1722442595000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Creche "Nome da Creche". Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
